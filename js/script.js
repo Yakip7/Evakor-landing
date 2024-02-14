@@ -16,7 +16,7 @@ if (window.innerWidth > 768) {
 
   function updateSliderPosition() {
     slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    // Update slide opacity
+
     for (let i = 0; i < slideCount; i++) {
       if (i === currentIndex) {
         slides.children[i].classList.add("active");
@@ -26,39 +26,24 @@ if (window.innerWidth > 768) {
     }
   }
 
-  setInterval(nextSlide, 2000); // Auto-rotate every 2 seconds
+  setInterval(nextSlide, 2000);
 }
-// Получаем кнопку "Заказать" и форму
-const orderButton = document.getElementById("orderButton");
-const form = document.getElementById("myForm");
 
-// Добавляем обработчик события на клик по кнопке "Заказать"
-orderButton.addEventListener("click", function () {
-  // Показываем форму, удаляя класс hidden
-  form.classList.remove("hidden");
-});
+let order = document.querySelector(".order-eva");
+let form = document.querySelector(".form");
+let send = document.querySelector(".send");
 
-// Получаем кнопку "Отправить"
-const submitButton = document.getElementById("submitButton");
+order.addEventListener("click", openform);
+function openform() {
+  form.style.display = "block";
+}
 
-// Добавляем обработчик события на клик по кнопке "Отправить"
-submitButton.addEventListener("click", function () {
-  // Скрываем форму, добавляя класс hidden
-  form.classList.add("hidden");
-  // Здесь можно добавить логику для отправки данных формы
-});
+send.addEventListener("click", closeform);
+function closeform() {
+  form.style.display = "none";
+  form.preventDefault();
+}
 
-// Добавляем обработчик события на отправку формы
 form.addEventListener("submit", function (event) {
-  // Предотвращаем стандартное поведение формы
   event.preventDefault();
-
-  // Далее можно добавить логику для отправки данных формы, например, с использованием AJAX или Fetch API
-
-  // В данном примере просто выводим сообщение в консоль
-  console.log("Данные формы были отправлены");
-
-  // Здесь можно добавить код для скрытия формы, если это необходимо
-  // Например, можно добавить следующую строку:
-  // form.style.display = 'none';
 });
