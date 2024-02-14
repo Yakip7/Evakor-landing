@@ -1,0 +1,46 @@
+/* слайдер */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, #d4145a54, #2e31923d);
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.slides {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+
+  gap: 50px;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  background-color: #3d5bf5;
+  padding: 20px;
+  background-color: #efcfde;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.5;
+  gap: 10px;
+  max-width: 600px;
+}
+.slide img {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+.active {
+  background-color: #ffffffff;
+  opacity: 1;
+}
+.decoration {
+  content: "";
+  background: linear-gradient(to right, #d4145a, #3d5bf5);
+  width: 130px;
+  height: 2px;
+}

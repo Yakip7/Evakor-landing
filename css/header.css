@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 20px;
+  background-image: linear-gradient(to right, #d4145ab2, #2e3192b2);
+  color: #ffffff;
+}
+
+.header__tel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header__tel img {
+  margin-right: 10px;
+}
+.header__tel span {
+  margin-right: 10px;
+}
+
+.header__city {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  font-size: 15px;
+}
+.header__city img {
+  margin-right: 10px;
+}
+.header__instagram {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.header__instagram img {
+  margin-right: 10px;
+}
+.header__instagram a {
+  color: #ffffff;
+}

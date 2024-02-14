@@ -1,0 +1,51 @@
+/* info */
+.info {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/icons/info/back2.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.info__header {
+  text-align: center;
+  font-size: 50px;
+}
+.info__header span {
+  background-image: linear-gradient(to bottom, #b90160, #3d5bf5);
+  background-clip: text;
+  color: transparent;
+}
+.info__rugs-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  margin-top: 50px;
+  gap: 50px;
+}
+.list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.list__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.item__description {
+  padding: 20px 30px;
+}
+.description__header {
+  font-size: 36px;
+}
+.description__text {
+  font-size: 14px;
+  color: #767676;
+  margin-top: 20px;
+}

@@ -1,0 +1,85 @@
+/* main */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/icons/main/block.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: right;
+}
+.main__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px;
+  font-weight: 900;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 47px;
+}
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: #737373;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.main__description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+.description__left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+}
+.description__right {
+  display: flex;
+  flex-grow: 1;
+}
+.description__right img {
+  width: 100%;
+}
+.description__title {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 23px;
+}
+.description__cityname {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.order-eva {
+  font-size: 10px;
+  font-weight: 900;
+  color: #ffffff;
+  width: 93px;
+  height: 28px;
+  border-radius: 7px;
+  text-transform: uppercase;
+
+  background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
+}
+
+.main-header__nav div:hover {
+  color: black;
+  cursor: pointer;
+}

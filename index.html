@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evakor Uzbekistan</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/info.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/adaptive/adaptive.css" />
    
   </head>
@@ -49,7 +54,7 @@
               Инновационные коврики для автомобиля
             </div>
             <div class="description__cityname">Tashkent</div>
-            <button class="order-eva">Заказать</button>
+            <button class="order-eva" id="orderButton">Заказать</button>
           </div>
           <div class="description__right">
             <img src="./img/icons/main/1main-img-rugs.svg" alt="descrp-img" />
@@ -143,6 +148,16 @@
       </div>
     </div>
   </div>
+  <form class="form" id="myForm">
+<div class="form__header">Форма заявки</div>
+<div class="form-inputs">
+  <input type="text"  placeholder="Ваше имя"/>
+  <input type="email" placeholder="Ваш email"/>
+  <textarea placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"></textarea>
+</div>
+<button class="send" id="submitButton">Отправить</button>
+
+  </form>
     <script src="./js/script.js"></script>
   </body>
 </html>
